@@ -1,0 +1,162 @@
+{
+  "Index": {
+    "title": "Sizning moliyaviy kelajagingiz biz bilan boshlanadi",
+    "description": "Urpha Capital - moliya va investitsiyalar sohasidagi yetakchi ta'lim va professional xizmatlar markazi.",
+    "buttons": {
+      "join": "Kursga yozilish",
+      "contact": "Bog'lanish"
+    },
+    "hero": {
+      "trusted": "Ishonchli hamkorlar",
+      "roi": "KUNDALIK ROI"
+    }
+  },
+  "Navigation": {
+    "home": "Asosiy",
+    "about": "Biz haqimizda",
+    "courses": "Kurslar",
+    "investment": "Investitsiyalar",
+    "blog": "Blog",
+    "contact": "Aloqa"
+  },
+  "About": {
+    "title": "Kompaniya haqida",
+    "description": "Urpha Capital 2023-yilda moliyaviy savodxonlikni oshirish va investitsiya imkoniyatlarini kengaytirish maqsadida tashkil etilgan. Bizning mutaxassislarimiz mijozlarga bozorni tahlil qilish va aktivlarini boshqarishda yordam berishadi.",
+    "badge": "O'quvchilar soni",
+    "highlights": {
+      "security": {
+        "title": "Xavfsizlik",
+        "desc": "Sizning investitsiyalaringiz himoyasi bizning ustuvor vazifamiz va asosiy maqsadimizdir."
+      },
+      "precision": {
+        "title": "Aniqlik",
+        "desc": "Bozor tahlilida maksimal aniqlik va professional algoritmik yondashuvni qo'llaymiz."
+      },
+      "speed": {
+        "title": "Tezlik",
+        "desc": "Signallar va trading amallarini eng ilg'or texnologiyalar orqali soniyalarda ijro etish."
+      }
+    }
+  },
+  "Services": {
+    "title": "Bizning xizmatlar",
+    "more": "To'liq ma'lumot",
+    "literacy": {
+      "title": "Moliyaviy savodxonlik",
+      "description": "Moliya dunyosiga ilk qadamni qo'ying va o'z mablag'laringizni to'g'ri boshqarishni o'rganing."
+    },
+    "courses": {
+      "title": "Onlayn va Oflayn kurslar",
+      "description": "Trading va investitsiya asoslarini tajribali treyderlardan o'rganing."
+    },
+    "copytrading": {
+      "title": "Investitsiya / Copy trading",
+      "description": "Professional treyderlar strategiyalarini avtomatik ravishda o'z hisobingizga nusxalari oling."
+    }
+  },
+  "Stats": {
+    "students": "O'quvchilar soni",
+    "graduates": "Muvaffaqiyatli bitiruvchilar",
+    "roi": "O'rtacha yillik daromad",
+    "traders": "Professional treyderlar"
+  },
+  "Benefits": {
+    "title": "Nega aynan Urpha Capital?",
+    "description": "Biz bilan siz nafaqat bilim olasiz, balki professional moliya dunyosiga ishonchli darvoza ochasiz.",
+    "items": {
+      "certificates": {
+        "label": "Sertifikatlar",
+        "desc": "Kurslarimiz bitiruvchilariga xalqaro darajadagi sertifikatlar topshiriladi."
+      },
+      "practice": {
+        "label": "Jonli amaliyot",
+        "desc": "Tradingni real bozor grafiklarida va amalda o'rganasiz."
+      },
+      "support": {
+        "label": "24/7 Qo'llab-quvvatlash",
+        "desc": "Mutaxassislarimiz har qanday savolingizga javob berishga tayyor."
+      },
+      "knowledge": {
+        "label": "Kafolatlangan bilim",
+        "desc": "Sizga haqiqiy natija beradigan va isbotlangan strategiyalar o'rgatiladi."
+      },
+      "mentorship": {
+        "label": "Mentorlik",
+        "desc": "Darsdan keyin ham mentorlarimiz sizga maslahatlar berib boradi."
+      },
+      "technology": {
+        "label": "Eng so'nggi texnologiyalar",
+        "desc": "AI va tahliliy dasturlardan foydalanishni o'rgatamiz."
+      }
+    }
+  },
+  "Testimonials": {
+    "title": "Mijozlarimiz Natijalari",
+    "description": "Muvaffaqiyatli o'quvchilar va hamkorlarimiz tajribasi bilan tanishing.",
+    "items": {
+      "azizbek": {
+        "name": "Azizbek Rahimov",
+        "role": "Professional Treyder",
+        "text": "Urpha Capital darslari orqali men bozorni tahlil qilishni va o'z strategiyamni tuzishni nol darajadan o'rgandim. Mentorlar har doim aloqada ekani juda muhim."
+      },
+      "malika": {
+        "name": "Malika Sobirova",
+        "role": "Mustaqil Investitor",
+        "text": "Copy trading xizmatidan foydalanganimga 3 oydan oshdi. Natijalar kutganimdan ham a'lo. Har bir qadamda professional yondashuv va yordam berishadi."
+      },
+      "jasur": {
+        "name": "Jasur Komilov",
+        "role": "Tadbirkor",
+        "text": "Moliyaviy savodxonlik barcha uchun zarur ekanligini aynan Urpha Capital kurslarida angladim. Pulni boshqarish va ko'paytirish san'atini o'rgatishadi."
+      }
+    }
+  },
+  "FAQ": {
+    "title": "Ko'p beriladigan Savollar",
+    "description": "Sizni qiziqtirgan barcha savollarga batafsil javoblar.",
+    "more": "Boshqa savollaringiz bormi?",
+    "cta": "Bizga bevosita yozing →",
+    "items": {
+      "q1": {
+        "q": "Urpha Capital kurslari kimlar uchun mo'ljallangan?",
+        "a": "Bizning kurslarimiz ham yangi boshlovchilar, ham tajribali treyderlar uchun o'ziga xos tarzda optimallashtirilgan. Moliyaviy savodxonlikdan tortib, murakkab algoritmik trading strategiyalarigacha hamma narsani tizimli ravishda o'rganishingiz mumkin."
+      },
+      "q2": {
+        "q": "Copy trading xizmati qanday ishlaydi?",
+        "a": "Copy trading orqali siz o'z hisobingizni bizning professional treyderlarimizning ishonchli master-hisoblariga bog'laysiz. Ular amalga oshirgan barcha foydali bitimlar avtomatik ravishda sizning hisobingizda ham bir millisoniya aniqlikda takrorlanadi."
+      },
+      "q3": {
+        "q": "Darslar oflayn formatda ham bormi?",
+        "a": "Ha, biz Toshkent shahrining markazida zamonaviy jihozlangan ofisimizda oflayn darslarni ham tashkil etganmiz. Oflayn darslarda siz professional treyderlar bilan bevosita muloqot qilish imkoniyatiga ega bo'lasiz."
+      },
+      "q4": {
+        "q": "To'lovlarni bo'lib to'lash imkoniyati mavjudmi?",
+        "a": "Albatta, biz o'quvchilarimizga qulaylik yaratish maqsadida kurs to'lovlarini 2 yoki 3 qismga bo'lib to'lash (installment) imkoniyatini taqdim etamiz. Bu sizga moliyaviy bosimsiz sifatli bilim olish imkonini beradi."
+      },
+      "q5": {
+        "q": "Kursni bitirgach qandaydir sertifikat beriladimi?",
+        "a": "Ha, barcha kurslarimiz bitiruvchilariga kursni muvaffaqiyatli yakunlaganliklari haqida Urpha Capital'ning maxsus QR-kodli raqamli va muhrlangan sertifikati topshiriladi."
+      }
+    }
+  },
+  "Contact": {
+    "title": "Moliyaviy Muvaffaqiyat Sari Bir Qadam",
+    "description": "Mentorlar bilan bog'lanish yoki darslarga yozilish uchun quyidagi shaklni to'ldiring. Savollaringizga 24 soat ichida javob qaytaramiz.",
+    "phone": "Telefon",
+    "email": "Elektron pochta",
+    "address": "Manzil",
+    "address_val": "Toshkent sh., Chilonzor tumani",
+    "form_title": "Savol Qoldiring",
+    "label_name": "F.I.SH",
+    "label_phone": "Telefon",
+    "label_message": "Xabar Mazmuni",
+    "placeholder_name": "Azizbek Rahimov",
+    "placeholder_phone": "+998 90 123 45 67",
+    "placeholder_message": "Savolingizni bu yerda qoldiring...",
+    "button": "Xabar Yuborish",
+    "footer": "Sizning ma'lumotlaringiz xavfsiz himoyalangan."
+  },
+  "Footer": {
+    "copyright": "© 2024 Urpha Capital. Barcha huquqlar himoyalangan."
+  }
+}

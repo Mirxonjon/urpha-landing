@@ -1,0 +1,162 @@
+{
+  "Index": {
+    "title": "Your financial future starts here",
+    "description": "Urpha Capital — a leading center for financial and investment education services.",
+    "buttons": {
+      "join": "Join a course",
+      "contact": "Contact us"
+    },
+    "hero": {
+      "trusted": "Trusted Partners",
+      "roi": "DAILY ROI"
+    }
+  },
+  "Navigation": {
+    "home": "Home",
+    "about": "About Us",
+    "courses": "Courses",
+    "investment": "Investment",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "About": {
+    "title": "About Company",
+    "description": "Urpha Capital was founded in 2023 to increase financial literacy and expand investment opportunities. Our specialists help clients analyze the market and manage their assets.",
+    "badge": "Number of students",
+    "highlights": {
+      "security": {
+        "title": "Security",
+        "desc": "Protecting your investments is our priority and primary goal."
+      },
+      "precision": {
+        "title": "Precision",
+        "desc": "We apply maximum precision and a professional algorithmic approach in market analysis."
+      },
+      "speed": {
+        "title": "Speed",
+        "desc": "Executing signals and trading operations in seconds using the most advanced technologies."
+      }
+    }
+  },
+  "Services": {
+    "title": "Our Services",
+    "more": "Learn More",
+    "literacy": {
+      "title": "Financial Literacy",
+      "description": "Take your first steps in the world of finance and learn how to manage your savings correctly."
+    },
+    "courses": {
+      "title": "Online & Offline Courses",
+      "description": "Learn the basics of trading and investment from experienced traders."
+    },
+    "copytrading": {
+      "title": "Investment / Copy Trading",
+      "description": "Automatically copy the strategies of professional traders to your account."
+    }
+  },
+  "Stats": {
+    "students": "Number of students",
+    "graduates": "Successful graduates",
+    "roi": "Average annual ROI",
+    "traders": "Professional traders"
+  },
+  "Benefits": {
+    "title": "Why Choose Urpha Capital?",
+    "description": "With us, you not only gain knowledge but also open a reliable gateway to the professional financial world.",
+    "items": {
+      "certificates": {
+        "label": "Certificates",
+        "desc": "Our graduates are awarded international certificates of achievement."
+      },
+      "practice": {
+        "label": "Live Practice",
+        "desc": "You learn trading on real market charts and in actual practice."
+      },
+      "support": {
+        "label": "24/7 Support",
+        "desc": "Our specialists are ready to answer any of your questions at any time."
+      },
+      "knowledge": {
+        "label": "Guaranteed Knowledge",
+        "desc": "You will be taught proven strategies that deliver real results."
+      },
+      "mentorship": {
+        "label": "Mentorship",
+        "desc": "Our mentors will guide you even after the courses are completed."
+      },
+      "technology": {
+        "label": "Latest Technologies",
+        "desc": "We teach you how to use AI and advanced analytical tools."
+      }
+    }
+  },
+  "Testimonials": {
+    "title": "Client Success Results",
+    "description": "Explore the experiences of our successful students and partners.",
+    "items": {
+      "azizbek": {
+        "name": "Azizbek Rakhimov",
+        "role": "Professional Trader",
+        "text": "Through Urpha Capital classes, I learned how to analyze the market and create my own strategy from scratch. It's crucial that mentors are always accessible."
+      },
+      "malika": {
+        "name": "Malika Sobirova",
+        "role": "Independent Investor",
+        "text": "I have been using the copy trading service for over 3 months. The results exceeded my expectations. Professional approach and support are provided at every step."
+      },
+      "jasur": {
+        "name": "Jasur Komilov",
+        "role": "Entrepreneur",
+        "text": "At Urpha Capital courses, I realized that financial literacy is essential for everyone. They teach the art of managing and growing money."
+      }
+    }
+  },
+  "FAQ": {
+    "title": "Frequently Asked Questions",
+    "description": "Detailed answers to all the questions you are interested in.",
+    "more": "Have other questions?",
+    "cta": "Write to us directly →",
+    "items": {
+      "q1": {
+        "q": "Who are Urpha Capital courses for?",
+        "a": "Our courses are uniquely optimized for both beginners and experienced traders. You can systematically study everything: from financial literacy to complex algorithmic trading strategies."
+      },
+      "q2": {
+        "q": "How does the copy trading service work?",
+        "a": "Through copy trading, you link your account to the reliable master accounts of our professional traders. All profitable trades they make are automatically repeated on your account with millisecond precision."
+      },
+      "q3": {
+        "q": "Are there offline classes available?",
+        "a": "Yes, we have organized offline classes in our modern office in the center of Tashkent. In offline courses, you will have the opportunity to communicate directly with professional traders."
+      },
+      "q4": {
+        "q": "Is there an option to pay in installments?",
+        "a": "Certainly, for the convenience of our students, we provide the option to pay for the course in 2 or 3 parts (installments). This allows you to get quality knowledge without financial pressure."
+      },
+      "q5": {
+        "q": "Is a certificate issued upon completion of the course?",
+        "a": "Yes, all our course graduates are awarded a special Urpha Capital digital and physical certificate with a QR code and stamp for successful completion of the training."
+      }
+    }
+  },
+  "Contact": {
+    "title": "A Step Towards Financial Success",
+    "description": "Fill out the form below to connect with mentors or sign up for classes. We will answer your questions within 24 hours.",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address",
+    "address_val": "Tashkent city, Chilonzor district",
+    "form_title": "Leave a Question",
+    "label_name": "Full Name",
+    "label_phone": "Phone Number",
+    "label_message": "Message Content",
+    "placeholder_name": "Azizbek Rakhimov",
+    "placeholder_phone": "+998 90 123 45 67",
+    "placeholder_message": "Leave your question here...",
+    "button": "Send Message",
+    "footer": "Your data is safely protected."
+  },
+  "Footer": {
+    "copyright": "© 2024 Urpha Capital. All rights reserved."
+  }
+}
