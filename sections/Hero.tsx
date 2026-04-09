@@ -25,7 +25,7 @@ export default function Hero() {
            initial={{ opacity: 0, y: 30 }}
            animate={{ opacity: 1, y: 0 }}
            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-           className="text-left"
+           className="text-center lg:text-left flex flex-col items-center lg:items-start"
         >
           <motion.div 
             initial={{ opacity: 0, x: -20 }}
@@ -46,20 +46,20 @@ export default function Hero() {
             {t("description")}
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-5">
-            <Button variant="primary" size="lg" className="group text-base px-8 h-[60px] rounded-2xl">
+          <div className="flex flex-col sm:flex-row gap-5 w-full justify-center lg:justify-start">
+            <Button variant="primary" size="lg" className="group text-base px-8 h-[60px] rounded-2xl w-full sm:w-auto">
               {t("buttons.join")}
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1.5 transition-transform duration-300" />
             </Button>
-            <Button variant="secondary" size="lg" className="text-base px-8 h-[60px] rounded-2xl">
+            <Button variant="secondary" size="lg" className="text-base px-8 h-[60px] rounded-2xl w-full sm:w-auto">
               {t("buttons.contact")}
             </Button>
           </div>
           
           {/* Trust indicators */}
-          <div className="mt-12 pt-12 border-t border-white/5 flex items-center gap-8 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
+          <div className="mt-12 pt-12 border-t border-white/5 flex flex-col lg:flex-row items-center gap-4 lg:gap-8 opacity-50 grayscale hover:grayscale-0 transition-all duration-500 w-full justify-center lg:justify-start">
              <div className="text-sm font-bold tracking-widest uppercase">{t("hero.trusted")}</div>
-             <div className="flex gap-6 items-center font-bold text-lg tracking-tighter">
+             <div className="flex flex-wrap justify-center gap-4 lg:gap-6 items-center font-bold text-lg tracking-tighter">
                 <span>BINANCE</span>
                 <span>METAMASK</span>
                 <span>TRADINGVIEW</span>

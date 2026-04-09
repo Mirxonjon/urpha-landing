@@ -17,7 +17,8 @@
     "courses": "Kurslar",
     "investment": "Investitsiyalar",
     "blog": "Blog",
-    "contact": "Aloqa"
+    "contact": "Aloqa",
+    "login": "Kirish"
   },
   "About": {
     "title": "Kompaniya haqida",
@@ -108,6 +109,16 @@
         "name": "Jasur Komilov",
         "role": "Tadbirkor",
         "text": "Moliyaviy savodxonlik barcha uchun zarur ekanligini aynan Urpha Capital kurslarida angladim. Pulni boshqarish va ko'paytirish san'atini o'rgatishadi."
+      },
+      "rustam": {
+        "name": "Rustam Qodirov",
+        "role": "Treyder / Investitor",
+        "text": "Mening savdo natijalarim Urpha Capital mentorlari tavsiyalari orqali 3 barobarga oshdi. Barchaga tavsiya qilaman!"
+      },
+      "nigina": {
+        "name": "Nigina To'rayeva",
+        "role": "Moliya Mutaxassisi",
+        "text": "Jamoaning professionalligi va ishga bo'lgan shaffof yondashuvi meni juda qoniqtirdi. Sarmoyam ishonchli qo'llarda."
       }
     }
   },
@@ -145,7 +156,7 @@
     "phone": "Telefon",
     "email": "Elektron pochta",
     "address": "Manzil",
-    "address_val": "Toshkent sh., Chilonzor tumani",
+    "address_val": "Toshkent sh., Sergeli tumani",
     "form_title": "Savol Qoldiring",
     "label_name": "F.I.SH",
     "label_phone": "Telefon",

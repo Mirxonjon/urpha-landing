@@ -43,8 +43,8 @@ export default function Contact() {
 
              <div className="space-y-10">
                 {[
-                  { icon: Phone, label: t("phone"), val: "+998 90 123 45 67" },
-                  { icon: Mail, label: t("email"), val: "info@urphacapital.com" },
+                  { icon: Phone, label: t("phone"), val: "+998 93 221 93 43" },
+                  { icon: Mail, label: t("email"), val: "urphacapital@gmail.com" },
                   { icon: MapPin, label: t("address"), val: t("address_val") },
                 ].map((item, idx) => (
                   <motion.div 

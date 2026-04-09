@@ -10,9 +10,8 @@ export default function Footer() {
   const f = useTranslations("Footer");
 
   const socialLinks = [
-    { icon: Globe, href: "#", color: "hover:bg-pink-500/20 hover:text-pink-400" },
-    { icon: Share2, href: "#", color: "hover:bg-blue-600/20 hover:text-blue-400" },
-    { icon: Send, href: "#", color: "hover:bg-emerald-500/20 hover:text-emerald-400" },
+    { icon: Send, href: "http://t.me/+7sJoHX5tY8wwNzRk", color: "hover:bg-blue-500/20 hover:text-blue-400" },
+    { icon: Globe, href: "https://www.instagram.com/urpha.capital/", color: "hover:bg-pink-600/20 hover:text-pink-400" },
   ];
 
   return (
@@ -71,14 +70,14 @@ export default function Footer() {
 
              <div>
                 <h4 className="text-white font-black text-xl mb-10 tracking-tight uppercase text-emerald-500/80">Bog'lanish</h4>
-                <div className="space-y-8">
+               <div className="space-y-8">
                    <div className="flex items-start gap-5 text-slate-400 group cursor-pointer">
                       <div className="w-10 h-10 rounded-xl bg-emerald-500/10 flex items-center justify-center shrink-0 border border-emerald-500/20 group-hover:bg-emerald-500 group-hover:text-white transition-all duration-500">
                          <Phone size={18} strokeWidth={2.5} />
                       </div>
                       <div className="text-left font-bold tracking-tight">
                          <span className="block text-[10px] uppercase text-slate-600 tracking-[0.2em] mb-1">Menedjer</span>
-                         <span className="text-white group-hover:text-emerald-500 transition-colors">+998 90 123 45 67</span>
+                         <span className="text-white group-hover:text-emerald-500 transition-colors">+998 93 221 93 43</span>
                       </div>
                    </div>
                    <div className="flex items-start gap-5 text-slate-400 group cursor-pointer">
@@ -87,7 +86,7 @@ export default function Footer() {
                       </div>
                       <div className="text-left font-bold tracking-tight">
                          <span className="block text-[10px] uppercase text-slate-600 tracking-[0.2em] mb-1">Email</span>
-                         <span className="text-white group-hover:text-emerald-500 transition-colors uppercase">info@urphacapital.com</span>
+                         <span className="text-white group-hover:text-emerald-500 transition-colors uppercase">urphacapital@gmail.com</span>
                       </div>
                    </div>
                    <div className="flex items-start gap-5 text-slate-400 group cursor-pointer">
@@ -96,7 +95,7 @@ export default function Footer() {
                       </div>
                       <div className="text-left font-bold tracking-tight">
                          <span className="block text-[10px] uppercase text-slate-600 tracking-[0.2em] mb-1">Manzil</span>
-                         <span className="text-white group-hover:text-emerald-500 transition-colors uppercase tracking-tight">Toshkent, Chilonzor tumani</span>
+                         <span className="text-white group-hover:text-emerald-500 transition-colors uppercase tracking-tight">Toshkent sh., Sergeli tumani</span>
                       </div>
                    </div>
                 </div>

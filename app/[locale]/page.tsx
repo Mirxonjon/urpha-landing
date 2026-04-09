@@ -11,7 +11,7 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="min-h-screen selection:bg-emerald-500/30">
+    <main className="min-h-screen selection:bg-emerald-500/30 w-full overflow-hidden">
       <Navbar />
       <div className="flex flex-col">
         <Hero />

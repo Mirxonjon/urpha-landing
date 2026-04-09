@@ -41,7 +41,7 @@ export default async function RootLayout({
   return (
     <html lang={locale} className="dark">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#0A0A0B] text-white selection:bg-emerald-500/30`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#0A0A0B] text-white selection:bg-emerald-500/30 overflow-x-hidden w-full relative`}
       >
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}

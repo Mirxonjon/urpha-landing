@@ -66,6 +66,7 @@ export default function About() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
+              className="text-center lg:text-left flex flex-col items-center lg:items-start"
             >
               <h2 className="text-4xl md:text-5xl font-extrabold mb-8 tracking-tight leading-tight">
                 {t("title")}
@@ -83,7 +84,7 @@ export default function About() {
                    whileInView={{ opacity: 1, x: 0 }}
                    viewport={{ once: true }}
                    transition={{ delay: 0.2 + idx * 0.1, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                   className="flex gap-6 p-6 rounded-[24px] hover:bg-white/[0.03] transition-all duration-500 border border-transparent hover:border-white/5 group relative overflow-hidden"
+                   className="flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-6 p-6 rounded-[24px] hover:bg-white/[0.03] transition-all duration-500 border border-transparent hover:border-white/5 group relative overflow-hidden"
                 >
                   <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/0 to-emerald-500/[0.02] opacity-0 group-hover:opacity-100 transition-opacity" />
                   

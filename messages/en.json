@@ -17,7 +17,8 @@
     "courses": "Courses",
     "investment": "Investment",
     "blog": "Blog",
-    "contact": "Contact"
+    "contact": "Contact",
+    "login": "Login"
   },
   "About": {
     "title": "About Company",
@@ -108,6 +109,16 @@
         "name": "Jasur Komilov",
         "role": "Entrepreneur",
         "text": "At Urpha Capital courses, I realized that financial literacy is essential for everyone. They teach the art of managing and growing money."
+      },
+      "rustam": {
+        "name": "Rustam Qodirov",
+        "role": "Trader / Investor",
+        "text": "My trading results increased 3 times thanks to the recommendations of Urpha Capital mentors. I highly recommend them to everyone!"
+      },
+      "nigina": {
+        "name": "Nigina Turayeva",
+        "role": "Financial Specialist",
+        "text": "The professionalism of the team and transparent approach to work really pleased me. My investments are in safe hands."
       }
     }
   },
@@ -145,7 +156,7 @@
     "phone": "Phone",
     "email": "Email",
     "address": "Address",
-    "address_val": "Tashkent city, Chilonzor district",
+    "address_val": "Tashkent city, Sergeli district",
     "form_title": "Leave a Question",
     "label_name": "Full Name",
     "label_phone": "Phone Number",

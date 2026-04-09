@@ -63,8 +63,13 @@ export default function Navbar() {
           ))}
         </div>
 
-        <div className="hidden md:flex items-center gap-6">
+        <div className="hidden md:flex items-center gap-4">
           <LocaleSwitcher />
+          <a href="https://lms.urphacapital.uz">
+            <Button variant="secondary" size="sm" className="px-5 py-2">
+              {t("login")}
+            </Button>
+          </a>
           <Button variant="primary" size="sm" className="px-5">
             {t("contact")}
           </Button>
@@ -110,6 +115,11 @@ export default function Navbar() {
                    <span className="text-sm font-medium text-slate-500">Language</span>
                    <LocaleSwitcher />
                 </div>
+                <a href="https://lms.urphacapital.uz" className="w-full">
+                  <Button variant="secondary" className="w-full">
+                     {t("login")}
+                  </Button>
+                </a>
                 <Button onClick={() => setMobileMenuOpen(false)} variant="primary" className="w-full">
                    {t("contact")}
                 </Button>
