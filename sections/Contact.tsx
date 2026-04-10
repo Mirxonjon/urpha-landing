@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Send, MessageSquare } from "lucide-react";
@@ -7,6 +8,34 @@ import { Button } from "@/components/ui/Button";
 
 export default function Contact() {
   const t = useTranslations("Contact");
+  
+  const [formData, setFormData] = useState({ name: "", phone: "", message: "" });
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoading(true);
+
+    const token = "8794348341:AAGBj2OrPJEcSRIs1nM3cHyG4ScvT9Le7E4";
+    const chatId = "1795748595";
+    const text = `Yangi Xabar (Urpha Landing) 📩\n\n👤 Ism: ${formData.name}\n📞 Telefon: ${formData.phone}\n💬 Xabar: ${formData.message}`;
+
+    try {
+      await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ chat_id: chatId, text }),
+      });
+      setSuccess(true);
+      setFormData({ name: "", phone: "", message: "" });
+      setTimeout(() => setSuccess(false), 5000);
+    } catch (error) {
+      console.error(error);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <section id="contact" className="section-padding relative overflow-hidden py-24 md:py-32">
@@ -75,27 +104,27 @@ export default function Contact() {
              
              <h3 className="text-3xl font-black mb-10 tracking-tight leading-tight relative z-10">{t("form_title")}</h3>
              
-             <form className="space-y-8 relative z-10">
+             <form className="space-y-8 relative z-10" onSubmit={handleSubmit}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                    <div className="space-y-3">
                       <label className="text-[11px] font-bold text-slate-500 uppercase tracking-widest ml-1">{t("label_name")}</label>
-                      <input type="text" placeholder={t("placeholder_name")} className="w-full bg-white/[0.03] border border-white/5 rounded-2xl px-7 py-5 focus:border-emerald-500/50 focus:bg-white/[0.05] outline-none transition-all duration-300 text-white font-medium placeholder:text-slate-700 hover:border-white/10" />
+                      <input type="text" placeholder={t("placeholder_name")} required value={formData.name} onChange={(e) => setFormData({...formData, name: e.target.value})} className="w-full bg-white/[0.03] border border-white/5 rounded-2xl px-7 py-5 focus:border-emerald-500/50 focus:bg-white/[0.05] outline-none transition-all duration-300 text-white font-medium placeholder:text-slate-700 hover:border-white/10" />
                    </div>
                    <div className="space-y-3">
                       <label className="text-[11px] font-bold text-slate-500 uppercase tracking-widest ml-1">{t("label_phone")}</label>
-                      <input type="tel" placeholder={t("placeholder_phone")} className="w-full bg-white/[0.03] border border-white/5 rounded-2xl px-7 py-5 focus:border-emerald-500/50 focus:bg-white/[0.05] outline-none transition-all duration-300 text-white font-medium placeholder:text-slate-700 hover:border-white/10" />
+                      <input type="tel" placeholder={t("placeholder_phone")} required value={formData.phone} onChange={(e) => setFormData({...formData, phone: e.target.value})} className="w-full bg-white/[0.03] border border-white/5 rounded-2xl px-7 py-5 focus:border-emerald-500/50 focus:bg-white/[0.05] outline-none transition-all duration-300 text-white font-medium placeholder:text-slate-700 hover:border-white/10" />
                    </div>
                 </div>
                 
                 <div className="space-y-3">
                    <label className="text-[11px] font-bold text-slate-500 uppercase tracking-widest ml-1">{t("label_message")}</label>
-                   <textarea rows={4} placeholder={t("placeholder_message")} className="w-full bg-white/[0.03] border border-white/5 rounded-2xl px-7 py-5 focus:border-emerald-500/50 focus:bg-white/[0.05] outline-none transition-all duration-300 text-white font-medium placeholder:text-slate-700 resize-none hover:border-white/10"></textarea>
+                   <textarea rows={4} placeholder={t("placeholder_message")} required value={formData.message} onChange={(e) => setFormData({...formData, message: e.target.value})} className="w-full bg-white/[0.03] border border-white/5 rounded-2xl px-7 py-5 focus:border-emerald-500/50 focus:bg-white/[0.05] outline-none transition-all duration-300 text-white font-medium placeholder:text-slate-700 resize-none hover:border-white/10"></textarea>
                 </div>
                 
-                <Button variant="primary" size="lg" className="w-full h-[70px] text-lg font-black rounded-2xl mt-4 relative overflow-hidden group/btn shadow-[0_15px_30px_rgba(16,185,129,0.2)]">
+                <Button disabled={loading} variant="primary" size="lg" className="w-full h-[70px] text-lg font-black rounded-2xl mt-4 relative overflow-hidden group/btn shadow-[0_15px_30px_rgba(16,185,129,0.2)]">
                    <span className="relative z-10 flex items-center justify-center gap-3">
-                      {t("button")}
-                      <Send className="w-5 h-5 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform duration-500" />
+                      {loading ? "Yuborilmoqda..." : success ? "Muvaffaqiyatli yuborildi!" : t("button")}
+                      {!loading && !success && <Send className="w-5 h-5 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform duration-500" />}
                    </span>
                 </Button>
                 

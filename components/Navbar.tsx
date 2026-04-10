@@ -8,6 +8,7 @@ import { Button } from "./ui/Button";
 import LocaleSwitcher from "./LocaleSwitcher";
 import { Menu, X, TrendingUp } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { UrphaLogo } from "./UrphaLogo";
 
 export default function Navbar() {
   const t = useTranslations("Navigation");
@@ -41,11 +42,11 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3 group">
-          <div className="w-10 h-10 bg-emerald-500 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-emerald-500/20">
-            <TrendingUp className="text-white w-6 h-6" />
+          <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-white/10">
+            <UrphaLogo className="text-black w-6 h-6" />
           </div>
           <span className="text-xl font-bold tracking-tight text-white">
-            Urpha<span className="text-emerald-500">Capital</span>
+            Urpha<span className="text-white">Capital</span>
           </span>
         </Link>
 

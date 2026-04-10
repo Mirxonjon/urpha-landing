@@ -2,8 +2,28 @@
 
 import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
-import { Send, TrendingUp, Mail, Phone, MapPin, Globe, Share2 } from "lucide-react";
+import { Send, TrendingUp, Mail, Phone, MapPin, Share2 } from "lucide-react";
 import { motion } from "framer-motion";
+import { UrphaLogo } from "./UrphaLogo";
+
+const Instagram = ({ size = 24, strokeWidth = 2, className = "" }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth={strokeWidth}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className={className}
+  >
+    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+  </svg>
+);
 
 export default function Footer() {
   const t = useTranslations("Navigation");
@@ -11,7 +31,7 @@ export default function Footer() {
 
   const socialLinks = [
     { icon: Send, href: "http://t.me/+7sJoHX5tY8wwNzRk", color: "hover:bg-blue-500/20 hover:text-blue-400" },
-    { icon: Globe, href: "https://www.instagram.com/urpha.capital/", color: "hover:bg-pink-600/20 hover:text-pink-400" },
+    { icon: Instagram, href: "https://www.instagram.com/urpha.capital/", color: "hover:bg-pink-600/20 hover:text-pink-400" },
   ];
 
   return (
@@ -23,11 +43,11 @@ export default function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20 mb-24">
              <div className="space-y-8">
                 <Link href="/" className="flex items-center gap-4 group">
-                  <div className="w-12 h-12 bg-emerald-500 rounded-[18px] flex items-center justify-center shadow-[0_10px_20px_rgba(16,185,129,0.3)] group-hover:rotate-6 transition-all duration-500">
-                    <TrendingUp className="text-white w-7 h-7" />
+                  <div className="w-12 h-12 bg-white rounded-[18px] flex items-center justify-center shadow-[0_10px_20px_rgba(255,255,255,0.1)] group-hover:rotate-6 transition-all duration-500">
+                    <UrphaLogo className="text-black w-7 h-7" />
                   </div>
                   <span className="text-2xl font-black tracking-tighter text-white">
-                    Urpha<span className="text-emerald-500">Capital</span>
+                    Urpha<span className="text-white">Capital</span>
                   </span>
                 </Link>
                 <p className="text-slate-400 text-[15px] leading-relaxed max-w-xs font-semibold italic opacity-80 decoration-emerald-500/20 underline underline-offset-4">
