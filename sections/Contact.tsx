@@ -18,7 +18,7 @@ export default function Contact() {
     setLoading(true);
 
     const token = "8794348341:AAGBj2OrPJEcSRIs1nM3cHyG4ScvT9Le7E4";
-    const chatId = "1795748595";
+    const chatId = "1723738427";
     const text = `Yangi Xabar (Urpha Landing) 📩\n\n👤 Ism: ${formData.name}\n📞 Telefon: ${formData.phone}\n💬 Xabar: ${formData.message}`;
 
     try {
