@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/Button";
 import { motion } from "framer-motion";
 import { Sparkles, ArrowRight, TrendingUp } from "lucide-react";
+import Image from "next/image";
 
 export default function Hero() {
   const t = useTranslations("Index");
@@ -67,54 +68,58 @@ export default function Hero() {
           </div>
         </motion.div>
         
-        {/* Hero Visual */}
+        {/* Hero Visual — Portrait */}
         <motion.div
            initial={{ opacity: 0, scale: 0.9, rotateY: -15 }}
            animate={{ opacity: 1, scale: 1, rotateY: 0 }}
            transition={{ duration: 1.2, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-           className="relative hidden lg:block perspective-1000"
+           className="relative hidden lg:flex items-center justify-center perspective-1000"
         >
-          <div className="aspect-[4/5] relative glass-card rounded-[48px] p-2 overflow-hidden shadow-[0_0_80px_-20px_rgba(16,185,129,0.3)]">
-            <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/20 via-transparent to-cyan-500/10 pointer-events-none" />
-            <div className="relative h-full bg-[#0D0D0E] rounded-[40px] flex items-center justify-center overflow-hidden">
-               <motion.div 
-                 animate={{ y: [0, -20, 0] }}
-                 transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-                 className="relative z-10 w-full h-full flex flex-col items-center justify-center text-center p-12"
-               >
-                  <TrendingUp size={160} className="text-emerald-500 drop-shadow-[0_0_30px_rgba(16,185,129,0.5)] mb-8" strokeWidth={1} />
-                  <div className="space-y-4">
-                     <div className="h-2 w-32 bg-emerald-500/20 rounded-full mx-auto" />
-                     <div className="h-2 w-48 bg-emerald-500/10 rounded-full mx-auto" />
-                     <div className="h-2 w-40 bg-emerald-500/5 rounded-full mx-auto" />
-                  </div>
-               </motion.div>
-               
-               {/* Decorative background elements */}
-               <div className="absolute -bottom-20 -right-20 w-64 h-64 bg-emerald-500/20 blur-[60px] rounded-full" />
-               <div className="absolute -top-10 -left-10 w-40 h-40 bg-cyan-500/20 blur-[50px] rounded-full" />
+          {/* Outer glow ring */}
+          <div className="absolute inset-0 rounded-[56px] bg-gradient-to-br from-emerald-500/30 via-transparent to-cyan-500/20 blur-2xl scale-105 pointer-events-none" />
+
+          {/* Portrait card — large */}
+          <div className="relative w-[460px] h-[580px] rounded-[52px] overflow-hidden shadow-[0_30px_100px_-10px_rgba(16,185,129,0.35)] border border-white/10">
+            <Image
+              src="/hero-portrait.png"
+              alt="Urpha Capital Mentor"
+              fill
+              className="object-cover"
+              style={{ objectPosition: "center 10%" }}
+              priority
+            />
+            {/* Light top fade only */}
+            <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/30" />
+
+            {/* Top-right verified badge */}
+            <div className="absolute top-5 right-5 bg-emerald-500 rounded-full px-3 py-1.5 flex items-center gap-1.5 shadow-[0_0_20px_rgba(16,185,129,0.6)]">
+              <div className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
+              <span className="text-[10px] font-black text-white uppercase tracking-widest">Live</span>
             </div>
           </div>
-          
-          {/* Floating data cards */}
-          <motion.div 
-             animate={{ y: [0, -10, 0] }}
-             transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-             className="absolute -right-10 top-1/4 glass p-6 rounded-2xl shadow-2xl border-white/10"
+
+          {/* Floating students card — left */}
+          <motion.div
+             animate={{ y: [0, -8, 0] }}
+             transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+             className="absolute -left-16 bottom-1/4 bg-[#0D0D0E]/90 backdrop-blur-xl border border-white/10 p-4 rounded-2xl shadow-2xl"
           >
-             <div className="flex items-center gap-4 mb-2">
-                <div className="w-8 h-8 bg-emerald-500 rounded-lg flex items-center justify-center font-bold text-xs">+12%</div>
-                <div className="text-xs font-bold text-slate-400">{t("hero.roi")}</div>
-             </div>
-             <div className="w-24 h-1 bg-emerald-500/20 rounded-full overflow-hidden">
-                <motion.div 
-                  initial={{ width: 0 }}
-                  animate={{ width: "75%" }}
-                  transition={{ duration: 2, delay: 1.5 }}
-                  className="h-full bg-emerald-500" 
-                />
+             <div className="flex items-center gap-3">
+               <div className="flex -space-x-2">
+                 {["AR","MK","JK"].map((initials, i) => (
+                   <div key={i} className="w-7 h-7 rounded-full bg-emerald-500/80 border-2 border-[#0D0D0E] flex items-center justify-center text-[8px] font-black text-white">{initials}</div>
+                 ))}
+               </div>
+               <div>
+                 <div className="text-white font-black text-sm">2,000+</div>
+                 <div className="text-slate-500 text-[9px] font-bold uppercase tracking-widest">Students</div>
+               </div>
              </div>
           </motion.div>
+
+          {/* Subtle corner glow */}
+          <div className="absolute -bottom-10 -right-10 w-48 h-48 bg-emerald-500/20 blur-[60px] rounded-full pointer-events-none" />
+          <div className="absolute -top-10 -left-10 w-36 h-36 bg-cyan-500/15 blur-[50px] rounded-full pointer-events-none" />
         </motion.div>
       </div>
     </section>
