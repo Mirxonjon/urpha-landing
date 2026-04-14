@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const locales = ['uz', 'ru', 'en'];
-  const baseUrl = 'https://urphacapital.com';
+  const baseUrl = 'https://urphacapital.uz';
 
   return locales.map((locale) => ({
     url: `${baseUrl}/${locale}`,

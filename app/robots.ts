@@ -6,6 +6,7 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://urphacapital.com/sitemap.xml',
+    sitemap: 'https://urphacapital.uz/sitemap.xml',
+    host: 'https://urphacapital.uz',
   };
 }
