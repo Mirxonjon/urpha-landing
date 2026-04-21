@@ -75,7 +75,13 @@ export const metadata: Metadata = {
       "max-video-preview": -1,
     },
   },
-  icons: { icon: "/favicon.ico" },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.svg", type: "image/svg+xml" },
+    ],
+    apple: [{ url: "/icon.svg" }],
+  },
 };
 
 export default async function RootLayout({
@@ -101,7 +107,7 @@ export default async function RootLayout({
     name: "Urpha Capital",
     alternateName: ["urphacapital", "Urpha"],
     url: "https://urphacapital.uz",
-    logo: "https://urphacapital.uz/favicon.ico",
+    logo: "https://urphacapital.uz/icon.svg",
     sameAs: [] as string[],
   };
 
