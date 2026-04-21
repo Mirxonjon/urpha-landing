@@ -1,13 +1,16 @@
 "use client";
 
+import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/Button";
 import { motion } from "framer-motion";
 import { Sparkles, ArrowRight, TrendingUp } from "lucide-react";
 import Image from "next/image";
+import { ContactModal } from "@/components/ContactModal";
 
 export default function Hero() {
   const t = useTranslations("Index");
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-24 overflow-hidden">
@@ -48,14 +51,16 @@ export default function Hero() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-5 w-full justify-center lg:justify-start">
-            <Button variant="primary" size="lg" className="group text-base px-8 h-[60px] rounded-2xl w-full sm:w-auto">
+            <Button onClick={() => setIsModalOpen(true)} variant="primary" size="lg" className="group text-base px-8 h-[60px] rounded-2xl w-full sm:w-auto">
               {t("buttons.join")}
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1.5 transition-transform duration-300" />
             </Button>
-            <Button variant="secondary" size="lg" className="text-base px-8 h-[60px] rounded-2xl w-full sm:w-auto">
+            <Button onClick={() => setIsModalOpen(true)} variant="secondary" size="lg" className="text-base px-8 h-[60px] rounded-2xl w-full sm:w-auto">
               {t("buttons.contact")}
             </Button>
           </div>
+          
+          <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
           
           {/* Trust indicators */}
           <div className="mt-12 pt-12 border-t border-white/5 flex flex-col lg:flex-row items-center gap-4 lg:gap-8 opacity-50 grayscale hover:grayscale-0 transition-all duration-500 w-full justify-center lg:justify-start">

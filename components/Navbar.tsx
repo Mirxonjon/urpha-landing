@@ -41,12 +41,12 @@ export default function Navbar() {
       )}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-3 group">
-          <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 shadow-white/10">
-            <UrphaLogo className="text-black w-6 h-6" />
+        <Link href="/" className="flex items-center gap-4 group">
+          <div className="group-hover:scale-105 group-hover:rotate-3 transition-all duration-300">
+            <UrphaLogo className="text-white w-[38px] h-[38px]" />
           </div>
-          <span className="text-xl font-bold tracking-tight text-white">
-            Urpha<span className="text-white">Capital</span>
+          <span className="text-[24px] font-extrabold tracking-tight text-white font-sans">
+            Urpha Capital
           </span>
         </Link>
 
@@ -71,9 +71,11 @@ export default function Navbar() {
               {t("login")}
             </Button>
           </a>
-          <Button variant="primary" size="sm" className="px-5">
-            {t("contact")}
-          </Button>
+          <Link href="#contact">
+            <Button variant="primary" size="sm" className="px-5">
+              {t("contact")}
+            </Button>
+          </Link>
         </div>
 
         {/* Mobile Toggle */}
@@ -121,9 +123,11 @@ export default function Navbar() {
                      {t("login")}
                   </Button>
                 </a>
-                <Button onClick={() => setMobileMenuOpen(false)} variant="primary" className="w-full">
-                   {t("contact")}
-                </Button>
+                <Link href="#contact" className="w-full" onClick={() => setMobileMenuOpen(false)}>
+                  <Button variant="primary" className="w-full">
+                     {t("contact")}
+                  </Button>
+                </Link>
               </div>
             </div>
           </motion.div>

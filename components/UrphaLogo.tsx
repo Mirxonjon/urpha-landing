@@ -9,7 +9,7 @@ export function UrphaLogo({ className, ...props }: React.SVGProps<SVGSVGElement>
       {...props}
     >
       <path d="M 25 10 L 47 25 L 47 90 C 30 75 25 55 25 40 Z" />
-      <path d="M 53 30 L 75 32 L 75 55 L 53 72 Z" />
+      <path d="M 53 30 L 75 30 L 75 55 L 53 70 Z" />
     </svg>
   );
 }

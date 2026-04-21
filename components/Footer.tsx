@@ -42,12 +42,12 @@ export default function Footer() {
        <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20 mb-24">
              <div className="space-y-8">
-                <Link href="/" className="flex items-center gap-4 group">
-                  <div className="w-12 h-12 bg-white rounded-[18px] flex items-center justify-center shadow-[0_10px_20px_rgba(255,255,255,0.1)] group-hover:rotate-6 transition-all duration-500">
-                    <UrphaLogo className="text-black w-7 h-7" />
+                <Link href="/" className="flex items-center gap-5 group">
+                  <div className="group-hover:scale-105 group-hover:rotate-3 transition-all duration-500">
+                    <UrphaLogo className="text-white w-[52px] h-[52px]" />
                   </div>
-                  <span className="text-2xl font-black tracking-tighter text-white">
-                    Urpha<span className="text-white">Capital</span>
+                  <span className="text-[32px] font-extrabold tracking-tight text-white font-sans">
+                    Urpha Capital
                   </span>
                 </Link>
                 <p className="text-slate-400 text-[15px] leading-relaxed max-w-xs font-semibold italic opacity-80 decoration-emerald-500/20 underline underline-offset-4">
